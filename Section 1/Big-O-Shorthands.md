@@ -81,6 +81,12 @@ function double(arr) {
 
 - log === log2
 
+___
+
+### Big_O_Notaion
+![Big_O_Notaion](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.vzevKt8gEfID9G3zaenqGQHaGa%26pid%3DApi&f=1)
+
+
 ## Summary
 
 ---
