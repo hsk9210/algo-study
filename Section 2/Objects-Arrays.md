@@ -50,5 +50,5 @@ Needs reindexing...
 - concat - O(N)
 - slice - O(N)
 - splice - O(N)
-- sort - O(N \* logN)
+- sort - O(N * logN)
 - forEach/map/filter/reduce/etc. - O(N)
