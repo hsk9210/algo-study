@@ -31,32 +31,31 @@ const validAnagram = (str1, str2) => {
 
 /* solution */
 
-const validAnagram(first, second) {
-  if (first.length !== second.length) return false;
+const validAnagram = (first, second) => {
+	if (first.length !== second.length) return false;
 
-  const lookUp = {};
+	const lookUp = {};
 
-  for (let i = 0; i<first.length; i++) {
-    let letter = first[i]
-    // if letter exists, increment, otherwise set to 1
-    lookup[letter] ? lookup[letter] += 1 : lookup[letter] = 1;
-  }
+	for (let i = 0; i < first.length; i++) {
+		let letter = first[i];
+		// if letter exists, increment, otherwise set to 1
+		lookup[letter] ? (lookup[letter] += 1) : (lookup[letter] = 1);
+	}
 
-  console.log(lookUp)
+	console.log(lookUp);
 
-  for (let i = 0; i < second.length; i++) {
-    let letter = second[i];
-    // can't find letter or letter is zero then its not a anagram
-    if (!lookup[letter]) {
-      return false;
-    } else {
-      lookup[letter] -= 1;
-    }
-  }
+	for (let i = 0; i < second.length; i++) {
+		let letter = second[i];
+		// can't find letter or letter is zero then its not a anagram
+		if (!lookup[letter]) {
+			return false;
+		} else {
+			lookup[letter] -= 1;
+		}
+	}
 
-  return true;
-}
-
+	return true;
+};
 
 validAnagram("", ""); // true
 validAnagram("aaz", "zza"); // false
