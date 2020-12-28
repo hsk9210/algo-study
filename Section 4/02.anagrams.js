@@ -29,7 +29,7 @@ const validAnagram = (str1, str2) => {
 	return true;
 };
 
-/* Harvy answer  */
+/*  Harvy answer  */
 
 const validAnagram = (one, two) => {
 	let sortArrOne = one.split("").sort();
