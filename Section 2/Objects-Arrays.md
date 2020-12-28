@@ -46,7 +46,7 @@ Needs reindexing...
 - push - O(1)
 - pop - O(1)
 - shift - O(N)
-- shift - O(N)
+- unshift - O(N)
 - concat - O(N)
 - slice - O(N)
 - splice - O(N)
