@@ -29,26 +29,9 @@ const validAnagram = (str1, str2) => {
 	return true;
 };
 
-/* Harvy answer  */
-
-const validAnagram = (one, two) => {
-	let sortArrOne = one.split("").sort();
-	let sortArrTwo = two.split("").sort();
-
-	if(sortArrOne.length !== sortArrTwo.length) {
-		return false;
-	} 
-	for(let i =0 ; i<sortArrOne.length ; i++) {
-		if(sortArrOne[i] !== sortArrTwo[i]) {
-			return false;
-		}
-	}
-	return true;
-}
-
 /* solution */
 
-const validAnagram = (first, second) => {
+const validAnagram(first, second) {
   if (first.length !== second.length) return false;
 
   const lookUp = {};
