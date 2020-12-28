@@ -2,7 +2,7 @@
 Q: Given two strings, write a function to determine if the second string is an anagram of the first. An anagram is a word, phrase, or name formed by rearranging the letters of another such as cinema, formed from iceman.
 */
 
-/* my answer */
+/* Paul answer */
 
 const validAnagram = (str1, str2) => {
 	if (str1.length !== str2.length) return false;
@@ -28,6 +28,23 @@ const validAnagram = (str1, str2) => {
 	}
 	return true;
 };
+
+/* Harvy answer  */
+
+const validAnagram = (one, two) => {
+	let sortArrOne = one.split("").sort();
+	let sortArrTwo = two.split("").sort();
+
+	if(sortArrOne.length !== sortArrTwo.length) {
+		return false;
+	} 
+	for(let i =0 ; i<sortArrOne.length ; i++) {
+		if(sortArrOne[i] !== sortArrTwo[i]) {
+			return false;
+		}
+	}
+	return true;
+}
 
 /* solution */
 
