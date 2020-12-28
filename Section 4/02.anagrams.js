@@ -49,11 +49,7 @@ const validAnagram = (one, two) => {
 /* solution */
 
 const validAnagram = (first, second) => {
-<<<<<<< HEAD
-  if (first.length !== second.length) return false;
-=======
 	if (first.length !== second.length) return false;
->>>>>>> 1f2d47ff9274c512dde092a02a641b7f47391b9a
 
 	const lookUp = {};
 
